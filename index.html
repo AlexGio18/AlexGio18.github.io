@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html lang="en"> //shows that the language for this site is in english.
+<html lang="en"> 
+<!-- shows that the language for this site is in english. -->
 <head>
 	<title>Alex's Site</title>
 
-		<style type="text/css"> //this is the in-line style sheet that formats the page.
-			div.container {width: 1000px;
-						align-content: center;}
+		<style type="text/css">
+		 /*//this is the in-line style sheet that formats the page.*/
+			div.container {max-width: 1000px;
+							margin: 0 auto;}
+			div.header {position: relative;
+						height: 200px;
+						color: orange;}
+			body {font-family: arial,helvetica,sans-serif;}
+			div.menu-nav {position: relative;
+						color:red;
+						height:50px;
+						width: 800px;}
+			th  {padding-right:25px;
+				 padding-left:25px;}
+			a 	{text-decoration: none;}
+			a:hover {color: gray;} /* this is so that when you hover over the link, you know it can be activated */
+			a:active {color:orange;} /* active links will display as orange*/
 
 		</style>
 
 </head>
 <body>
-	<div id="container-1" class="container"> // this div contains all the contents of the body
-		<div id="header-1" class="header"> //this div contains the header
-
-
-
+	<div id="container-1" class="container"> 
+	<!-- this div contains all the contents of the body -->
+		<div id="header-1" class="header"> 
+		<!-- this div contains the header -->
+			<a href="AlexGio18.github.io/index.html"><img src="assets/Alex_Header_1.jpg" alt="Alex Banner"></a>
+			<!-- image in the header + link to the homepage(index)-->
+		</div>
+		<div id="menu-nav1" class="menu-nav">
+		<!-- div contains a navigation menu made from a table with nav-links to other pages in the website. -->
+			<table>
+				<tr>
+					<th><a href="AlexGio18.github.io/index.html">Home</a></th>
+					<th>About</th>
+					<th>Portfolio</th>
+				</tr>
+			</table>
 
 
 
