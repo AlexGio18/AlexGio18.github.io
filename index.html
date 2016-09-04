@@ -35,9 +35,19 @@
 								background-color: red; /* Keeping the color so you can easily see where this div is on the page. */
 								height: 600px;
 								margin-right: 100px;}
-			h1 {padding: 10px;}
 
-			p {padding: 10px;}
+			div.footer {position: relative;
+						margin-left: 100px;
+						margin-right: 100px;
+						margin-bottom: 50px;
+						width: 800px
+						height: 50px;
+						background-color: yellow;
+						clear:left;		/* keeps it from going under the float div boxes. */
+						clear: right;	/* keeps it from going under the float div boxes. */
+						text-align: center;}
+
+			h1, p, h2, h3 {padding: 10px;}
 
 			th  {padding-right:25px;
 				 padding-left:25px;}
@@ -57,28 +67,57 @@
 	<!-- this div contains all the contents of the body -->
 		<div id="header-1" class="header"> 
 		<!-- this div contains the header -->
-			<a href="AlexGio18.github.io/index.html"><img src="assets/Alex_Header_1.jpg" alt="Alex Banner"></a>
+			<a href="index.html"><img src="assets/Alex_Header_1.jpg" alt="Alex Banner"></a>
 			<!-- image in the header + link to the homepage(index)-->
 		</div>
 		<div id="menu-nav1" class="menu-nav">
 		<!-- div contains a navigation menu made from a table with nav-links to other pages in the website. -->
 			<table>
 				<tr>
-					<th><a href="AlexGio18.github.io/index.html">Home</a></th> <!-- links to home page -->
-					<th><a href="AlexGio18.github.io/about.html">About</a></th> <!-- links to about page -->
-					<th><a href="AlexGio18.github.io/portfolio.html">Portfolio</a></th> <!-- links to portfolio pages -->
+					<th><a href="index.html">Home</a></th> <!-- links to home page -->
+					<th><a href="about.html">About</a></th> <!-- links to about page -->
+					<th><a href="portfolio.html">Portfolio</a></th> <!-- links to portfolio pages -->
 				</tr>
 			</table>
 		</div>
 		<div id="left-content1" class="left-content"> <!-- div for info block on left side of the page. -->
 			<h1> Content Box Left! </h1>
 				<p> Hello World! This site, upon completion, will serve as a mock portfolio/website/blog for me. Right now as you can see, the site is only in the initial layout phase. </p>
+			<h2> This list will have some of the features that will be on the site </h2>
+				<ul>
+					<li> Home page: Carousel style image gallery. </li>
+					<li> Portfolio page: Click to Expand Image gallery boxes </li>
+					<li> About Page: Alittle bit about me, resume, etc. </li>
+					<li> Blog page with writing, images, and stuff </li>
+				</ul>
 		</div>
 		<div id="right-content1" class="right-content"> <!-- div for info block on right side of the page. -->
 			<h1> Content Box Right! </h1>
+			<form name="Alex's Form" action="thanks.html" method="post">
+				<fieldset>
+					<label> Who are you?</label>
+					<input type="text" name="whoyouare">
+					<br><br>
+					<label> Why are you here? </label>
+					<input type="text" name="whyyourhere">
+					<br><br>
+					<label> Tell me what you would like to see on this site! (250 chars max) </label>
+					<textarea name="siteideas" rows="5" cols="50"></textarea>
+					<br><br>
+					<label> Cool! What is your email so I can get in touch with you.</label>
+					<input type="text" name="email">
+				</fieldset>
+				<button type="submit">Submit</button>
+			</form>
+
+			<h3> A site like mine. </h3>
+			<p>This is the site: <a href="http://seanhalpin.io/">http://seanhalpin.io/</a><br>
+			It's exactly what I like, and want to see with my site. I love that it is simple and user-friendly, and illustrative. It is also the exact type of freelance work I wish to do in the future. The source code is very clean and easy to read. He even added a funny little maze.</p>
+
+
 		</div>
 
-		<div id="footer1" class="footer">
+		<div id="footer1" class="footer"> <strong>Copyright AlexGio18 2016</strong>
 		</div>
 
 	</div>

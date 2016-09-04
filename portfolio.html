@@ -1,9 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
-	<title></title>
+	<title>Alex's Portfolio!</title>
+
+
+
+<head>
+	<title>Alex's Site</title>
+		<!--  this is the inline style sheet for the page. Will eventually need an external .css file for formatting across all pages. -->
+		<style type="text/css">
+			
+			div.container {max-width: 1000px;
+							margin: 0 auto;} /* centers this container div horizontally on the page*/
+			div.header {position: relative;
+						height: 200px
+						width 800px;
+						padding-right: 100px;
+						padding-left: 100px;}
+			
+			body {font-family: arial,helvetica,sans-serif;} /* makes the fonts on the page more appealing. */
+			
+			div.menu-nav {position: relative; /* formatting for the navigation menu */
+						height:50px;
+						width: 800px;
+						padding-left: 100px;
+						padding-right: 100px;
+						margin: 0 auto;}
+			
+			div.footer {position: relative;
+						margin-left: 100px;
+						margin-right: 100px;
+						margin-bottom: 50px;
+						width: 800px
+						height: 50px;
+						background-color: yellow;
+						clear:left;
+						text-align: center;}
+
+			h1 {padding: 10px;}
+
+			p {padding: 10px;}
+
+			th  {padding-right:25px;
+				 padding-left:25px;}
+			
+			a 	{text-decoration: none; /* gets rid of that gross link look */
+					color: black;}
+			
+			a:hover {color: gray;} /* this is so that when you hover over the link, you know it can be activated */
+			
+			a:active {color:orange;} /* active links will display as orange*/
+
+		</style>
+
 </head>
-<body>
+<body> <!-- the divs all contain id tags and class tags. Right now I'm only acting on the class stuff. Later on when things get more complex and individual divs need their own styles, I'll use the id tag to overwrite class tags. -->
+	<div id="container-1" class="container"> 
+	<!-- this div contains all the contents of the body -->
+		<div id="header-1" class="header"> 
+		<!-- this div contains the header -->
+			<a href="index.html"><img src="assets/Alex_Header_1.jpg" alt="Alex Banner"></a>
+			<!-- image in the header + link to the homepage(index)-->
+		</div>
+		<div id="menu-nav1" class="menu-nav">
+		<!-- div contains a navigation menu made from a table with nav-links to other pages in the website. -->
+			<table>
+				<tr>
+					<th><a href="index.html">Home</a></th> <!-- links to home page -->
+					<th><a href="about.html">About</a></th> <!-- links to about page -->
+					<th><a href="portfolio.html">Portfolio</a></th> <!-- links to portfolio pages -->
+				</tr>
+			</table>
+		</div>
+		
+
+		<div id="footer1" class="footer">
+		</div>
+
+		<div id="footer1" class="footer"> <strong>Copyright AlexGio18 2016</strong>
+		</div>
+		
+	</div>
 
 </body>
 </html>
