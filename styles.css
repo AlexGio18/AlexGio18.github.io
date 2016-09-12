@@ -1,0 +1,135 @@
+body {font-family: futura,arial,helvetica,sans-serif;}
+
+.container {	max-width: 960px;
+				margin: 0 auto;
+} 
+
+
+.top {	background-image: url("assets/Alex_Sunset_2.jpg");
+		max-width: 960px;
+		height: 632px;
+}
+
+.top-banner {	background-image: url("assets/Alex_banner_1.jpg");
+				width: 960px;
+				height: 132px;
+}
+
+.header {	position: relative;
+			width: 98%;
+
+}
+
+#hello-world {	font-family: courier;
+				font-size: 2.5em;
+				color: white;
+				width: 315px;
+				height: 32px;
+				display:inline-block;
+				padding-left: 45px;
+				padding-top: 60px;
+}
+
+#hello-world a:visited { color: white;
+}
+			
+.menu-nav {	font-family: courier;
+			position: relative;
+			height: 32px;
+			width: 20%;
+			display: inline-block;
+}
+
+th  {	padding-right:25px;
+		padding-left:25px;
+}
+			
+a 	{	text-decoration: none; 
+		color: white;
+}
+			
+a:hover { color: orange;
+}
+			
+a:active { color: gray;
+}
+
+a:visited {	color: lightgray;
+}
+
+#introduction {	width: 45%;
+				margin-top: 22%;
+				margin-left: 27%;
+				height: 50px;
+}
+
+#introduction section { font-family: superclarendon, clarendon, serif;
+						color: white;
+						text-align: center;
+}
+
+			/*div.left-content {position: relative;
+								width: 400px;
+								float: left;
+								background-color: green;
+								height: 600px;
+								margin-left: 100px;}
+
+			div.right-content {position: relative;
+								width: 400px;
+								float: right;
+								background-color: red;
+								height: 600px;
+								margin-right: 100px;}*/
+
+.footer {	position: relative;
+			margin-top: 25px;
+			margin-bottom: 50px;
+			height: 50px;	
+			text-align: center;
+			font-family: superclarendon, clarendon, serif;
+
+}
+
+			h1, p, h2, h3 {padding: 10px;}
+
+.contact-me {
+	border: 2px solid black;
+	padding: 15px;
+}
+
+
+@media screen and (max-width:480px){
+
+.container {	max-width: 480px
+}
+
+#hello-world {	font-family: courier;
+				font-size: 2.5em;
+				color: white;
+				width: 315px;
+				height: 32px;
+				display:inline-block;
+				margin: 0 auto;
+}
+
+.menu-nav {	font-family: courier;
+			position: relative;
+			margin: 20px;
+			height:32px;
+			width: 450px;
+			display: inline-block;
+}
+
+th { 	padding-right: 10px;
+		padding-left: 10px;
+}
+
+#introduction {	width: 250px;
+				margin-top: 22%;
+				margin: 0 auto;
+				height: 50px;
+
+}
+
+}

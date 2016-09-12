@@ -1,86 +1,44 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- language is in engish -->
+<html lang="en">
 <head>
-	<title>Alex's Site</title>
-		<!--  this is the inline style sheet for the page. Will eventually need an external .css file for formatting across all pages. -->
-		<style type="text/css">
-			
-			div.container {max-width: 1000px;
-							margin: 0 auto;} /* centers this container div horizontally on the page*/
-			div.header {position: relative;
-						height: 200px
-						width 800px;
-						padding-right: 100px;
-						padding-left: 100px;}
-			
-			body {font-family: arial,helvetica,sans-serif;} /* makes the fonts on the page more appealing. */
-			
-			div.menu-nav {position: relative; /* formatting for the navigation menu */
-						height:50px;
-						width: 800px;
-						padding-left: 100px;
-						padding-right: 100px;
-						margin: 0 auto;}
-			
-			div.left-content {position: relative;
-								width: 400px;
-								float: left;
-								background-color: green; /* Keeping the color so you can easily see where this div is on the page. */
-								height: 600px;
-								margin-left: 100px;}
-
-			div.right-content {position: relative;
-								width: 400px;
-								float: right;
-								background-color: red; /* Keeping the color so you can easily see where this div is on the page. */
-								height: 600px;
-								margin-right: 100px;}
-
-			div.footer {position: relative;
-						margin-left: 100px;
-						margin-right: 100px;
-						margin-bottom: 50px;
-						width: 800px
-						height: 50px;
-						background-color: yellow;
-						clear:left;		/* keeps it from going under the float div boxes. */
-						clear: right;	/* keeps it from going under the float div boxes. */
-						text-align: center;}
-
-			h1, p, h2, h3 {padding: 10px;}
-
-			th  {padding-right:25px;
-				 padding-left:25px;}
-			
-			a 	{text-decoration: none; /* gets rid of that gross link look */
-					color: black;}
-			
-			a:hover {color: gray;} /* this is so that when you hover over the link, you know it can be activated */
-			
-			a:active {color:orange;} /* active links will display as orange*/
-
-		</style>
-
+	<title>My Site.</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
 </head>
-<body> <!-- the divs all contain id tags and class tags. Right now I'm only acting on the class stuff. Later on when things get more complex and individual divs need their own styles, I'll use the id tag to overwrite class tags. -->
-	<div id="container-1" class="container"> 
-	<!-- this div contains all the contents of the body -->
-		<div id="header-1" class="header"> 
-		<!-- this div contains the header -->
-			<a href="index.html"><img src="assets/Alex_Header_1.jpg" alt="Alex Banner"></a>
-			<!-- image in the header + link to the homepage(index)-->
-		</div>
-		<div id="menu-nav1" class="menu-nav">
-		<!-- div contains a navigation menu made from a table with nav-links to other pages in the website. -->
+<body>
+	<div class="container"> 
+		
+		<section class="top">
+		<header class="header">
+			
+			<div id="hello-world">
+				<a href="index.html">Hello-World!</a>
+			</div>
+		
+		<nav class="menu-nav">
+			
 			<table>
 				<tr>
-					<th><a href="index.html">Home</a></th> <!-- links to home page -->
-					<th><a href="about.html">About</a></th> <!-- links to about page -->
-					<th><a href="portfolio.html">Portfolio</a></th> <!-- links to portfolio pages -->
+					<th><a href="index.html">Home</a></th>
+					<th><a href="about.html">About</a></th>
+					<th><a href="portfolio.html">Portfolio</a></th>
+					<th><a href="contact.html">Contact</a></th>
 				</tr>
 			</table>
-		</div>
-		<div id="left-content1" class="left-content"> <!-- div for info block on left side of the page. -->
+
+		</nav>
+
+		
+		</header>
+			
+			<div id="introduction">
+				<img src="assets/introduction.svg" alt="My name is Alex.">
+				<section><p> I am a graphic artist, designer, and future web developer!</p></section>
+			</div>
+		
+		</section>
+
+		<!--<main class="">
+		<div id="left-content1" class="left-content"> 
 			<h1> Content Box Left! </h1>
 				<p> Hello World! This site, upon completion, will serve as a mock portfolio/website/blog for me. Right now as you can see, the site is only in the initial layout phase. </p>
 			<h2> This list will have some of the features that will be on the site </h2>
@@ -91,24 +49,8 @@
 					<li> Blog page with writing, images, and stuff </li>
 				</ul>
 		</div>
-		<div id="right-content1" class="right-content"> <!-- div for info block on right side of the page. -->
+		<div id="right-content1" class="right-content"> 
 			<h1> Content Box Right! </h1>
-			<form name="Alex's Form" action="thanks.html" method="post">
-				<fieldset>
-					<label> Who are you?</label>
-					<input type="text" name="whoyouare">
-					<br><br>
-					<label> Why are you here? </label>
-					<input type="text" name="whyyourhere">
-					<br><br>
-					<label> Tell me what you would like to see on this site! (250 chars max) </label>
-					<textarea name="siteideas" rows="5" cols="50"></textarea>
-					<br><br>
-					<label> Cool! What is your email so I can get in touch with you.</label>
-					<input type="text" name="email">
-				</fieldset>
-				<button type="submit">Submit</button>
-			</form>
 
 			<h3> A site like mine. </h3>
 			<p>This is the site: <a href="http://seanhalpin.io/">http://seanhalpin.io/</a><br>
@@ -116,9 +58,8 @@
 
 
 		</div>
-
-		<div id="footer1" class="footer"> <strong>Copyright AlexGio18 2016</strong>
-		</div>
+		</main> --> 
+		<footer class="footer">Copyright AlexGio18 2016</footer>
 
 	</div>
 </body>
