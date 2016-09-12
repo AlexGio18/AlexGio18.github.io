@@ -21,7 +21,6 @@ body {font-family: futura,arial,helvetica,sans-serif;}
 }
 
 #hello-world {	font-family: courier;
-				font-style: bold;
 				font-size: 2.5em;
 				color: white;
 				width: 315px;
@@ -86,7 +85,6 @@ a:visited {	color: lightgray;
 .footer {	position: relative;
 			margin-top: 25px;
 			margin-bottom: 50px;
-			width: 800px
 			height: 50px;	
 			text-align: center;
 			font-family: superclarendon, clarendon, serif;
@@ -107,7 +105,6 @@ a:visited {	color: lightgray;
 }
 
 #hello-world {	font-family: courier;
-				font-style: bold;
 				font-size: 2.5em;
 				color: white;
 				width: 315px;
@@ -132,5 +129,7 @@ th { 	padding-right: 10px;
 				margin-top: 22%;
 				margin: 0 auto;
 				height: 50px;
+
+}
 
 }
