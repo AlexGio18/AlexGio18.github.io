@@ -30,8 +30,8 @@ body {font-family: futura,arial,helvetica,sans-serif;}
 				padding-top: 60px;
 }
 
-#hello-world a:visited { color: white;
-}
+/*#hello-world a:visited { color: white;
+}*/
 			
 .menu-nav {	font-family: courier;
 			position: relative;
@@ -54,8 +54,8 @@ a:hover { color: orange;
 a:active { color: gray;
 }
 
-a:visited {	color: lightgray;
-}
+/*a:visited {	color: lightgray;
+}*/
 
 #introduction {	width: 45%;
 				margin-top: 22%;
